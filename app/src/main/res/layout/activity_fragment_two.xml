@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242">
+
+    <TextView
+        android:id="@+id/appNameF2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#FFE0B2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fragmentTwoButton"
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:layout_margin="15sp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_sample"
+        android:fontFamily="@font/montserrat_light"
+        android:onClick="onClickToHome"
+        android:text="@string/goButton2"
+        android:textColor="#424242"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fragmentTwoText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/montserrat"
+        android:lineSpacingExtra="5sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/guide2TextView1"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTwoView" />
+
+    <ImageView
+        android:id="@+id/fragmentTwoView"
+        android:layout_width="wrap_content"
+        android:layout_height="177dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appNameF2"
+        app:srcCompat="@drawable/cat1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
